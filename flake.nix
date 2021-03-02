@@ -44,6 +44,8 @@
             objcopy -S -O binary hello.elf hello
             ./hello
           '';
+
+          outputs = [ "lib" "bin" ];
         };
 
       };
